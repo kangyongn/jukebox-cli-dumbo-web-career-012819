@@ -43,7 +43,7 @@ def run (playlist)
   help
   puts "Please enter a command:"
   input = gets.chomp
-  until input == "exit"
+  until input == "fin"
     puts "Please enter a command:"
     input = gets.chomp
     case input
@@ -55,7 +55,7 @@ def run (playlist)
       help
     when "exit"
       exit_jukebox
-      input = "exit"
+      input = "fin"
     end
   end
   
